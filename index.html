@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Рикки</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="greeting-screen" class="screen active">
+      <h1>Привет, я Рикки!</h1>
+      <p>Как тебя зовут?</p>
+      <input type="text" id="username" placeholder="Имя" />
+      <p>Когда у тебя день рождения?</p>
+      <input type="date" id="birthdate" />
+      <button onclick="startApp()">Поехали!</button>
+    </div>
+
+    <div id="main-screen" class="screen">
+      <h2>Привет, <span id="player-name"></span>!</h2>
+      <div id="indicators">
+        <p>Энергия: <span id="energy">100</span>%</p>
+        <p>Здоровье: <span id="health">100</span>%</p>
+        <p>Звёзды: <span id="stars">10</span></p>
+      </div>
+      <div id="raccoon">🦝</div>
+      <button onclick="showHomework()">Домашка</button>
+      <p id="homework-text" style="display:none;">Не забудь выучить таблицу умножения!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
